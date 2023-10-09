@@ -13,6 +13,7 @@ phases:
       - echo Prebuild ops
       - pwd
       - cd cdos/djangoApp
+      - cd cdos/djangoApp
       - ls
       - source bin/activate
       - cd movieApp/
