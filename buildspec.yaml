@@ -12,10 +12,11 @@ phases:
     commands: 
       - echo Prebuild ops
       - pwd
-      - cd cdos/djangoApp
-      - cd cdos/djangoApp
+      - cd cdos
       - ls
+      - cd djangoApp
       - source bin/activate
+      - ls
       - cd movieApp/
       - pip3 install -r requirements.txt 
   build: 
