@@ -12,9 +12,9 @@ phases:
     commands: 
       - echo Prebuild ops
       - pwd
-      - cd cdos
+      - cd cdos/
       - ls
-      - cd djangoApp
+      - cd djangoApp/
       - source bin/activate
       - ls
       - cd movieApp/
