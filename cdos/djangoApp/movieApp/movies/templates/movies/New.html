@@ -1,0 +1,77 @@
+    <!DOCTYPE html>  
+    <html lang="en">  
+    <head>  
+        <meta charset="UTF-8">  
+        <title>Index</title>  
+        {% load static %}  
+        <link rel="stylesheet" href="{% static 'css/style.css' %}"/>  
+    </head>  
+    <body>  
+          <h1 class="heading">Add Movie<h1>
+
+    <form action="/movies/newrecord/" method="POST" enctype="multipart/form-data">  
+            {% csrf_token %}  
+        <div class="container">  
+      <a href="/movies" style="background: #40679a;color: white;border: none;padding: 6px;text-decoration: none;width: fit-content;font-size: 15px;">Home</a>
+
+    <br>  
+        <div class="form-group row">  
+        <label class="col-sm-1 col-form-label"></label>  
+        <div class="col-sm-4">  
+        </div>  
+      </div>
+      <div class="fields">
+        <div class="inputFields">
+          <div class="form-group row">  
+        <label class="col-sm-2 col-form-label">Movie Name:</label>  
+        <div class="col-sm-4">  
+            <input type="text" name="title" id="id_eid" required maxlength="100" value="{{ movie.title }}"/>  
+        </div>  
+      </div>  
+      <div class="form-group row">  
+        <label class="col-sm-2 col-form-label">movie Director:</label>  
+        <div class="col-sm-4">  
+            <input type="text" name="director" id="id_ename" required maxlength="100" value="{{ movie.director }}" />  
+        </div>  
+      </div>  
+        <div class="form-group row">  
+        <label class="col-sm-2 col-form-label">Release date:</label>  
+        <div class="col-sm-4">  
+            <input type="text" name="year" id="id_eemail" required maxlength="25" value="{{ movie.year }}" />  
+        </div>  
+      </div>  
+        </div>
+        <div class="inputFields">
+           <div class="form-group row">  
+        <label class="col-sm-2 col-form-label">Movie genre:</label>  
+        <div class="col-sm-4">  
+            <input type="text" name="genre" id="id_econtact" required maxlength="15" value="{{ movie.genre }}" />  
+        </div>  
+      </div>
+      <div class="form-group row">  
+        <label class="col-sm-2 col-form-label">Movie duration:</label>  
+        <div class="col-sm-4">  
+            <input type="text" name="duration" id="id_econtact" required maxlength="15" value="{{ movie.duration }}" />  
+        </div>  
+      </div>
+      <div class="form-group row">  
+        <label class="col-sm-2 col-form-label">Movie image:</label>  
+        <div class="col-sm-4">  
+        <input class="form-control" type="file" name="cover">
+              <!--<input type="file" accept="image/*" name="cover" required value="{{ movie.cover.url }}">-->
+        </div>  
+      </div>
+        </div>
+      </div>
+        
+       
+        <div class="form-group row">  
+        <label class="col-sm-1 col-form-label"></label>  
+        <div class="col-sm-4">  
+<input type="submit" value="Submit">
+</div>  
+      </div>  
+        </div>   
+    </form>  
+    </body>  
+    </html>  
