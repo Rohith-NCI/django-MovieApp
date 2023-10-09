@@ -11,11 +11,14 @@ phases:
   pre_build: 
     commands: 
       - echo Prebuild ops
+      - cd cdos/djangoApp
+      - source bin/activate
+      - cd movieApp/
       - pip3 install -r requirements.txt 
   build: 
     commands: 
       - echo Building the application 
-      - cd movieApp/
+      # - cd movieApp/
       - python manage.py runserver 
   post_build: 
     commands: 
