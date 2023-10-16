@@ -9,6 +9,7 @@
 # kill any servers that may be running in the background 
 sudo pkill -f runserver
 
+
 # kill frontend servers if you are deploying any frontend
 # sudo pkill -f tailwind
 # sudo pkill -f node
