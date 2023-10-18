@@ -53,4 +53,4 @@ sudo firewall-cmd --zone=public --permanent --add-port=8080/tcp sudo firewall-cm
 # sudo firewall-cmd --zone=public --permanent ----add-service=mysql sudo firewall-cmd --reload
 
 # run server
-screen -d -m python3 /home/ubuntu/django-movieApp/manage.py runserver 8080
+screen -d -m python3 /home/ubuntu/django-movieApp/manage.py runserver
