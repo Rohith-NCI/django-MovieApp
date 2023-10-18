@@ -44,9 +44,13 @@ source /home/ubuntu/django-movieApp/venv/bin/activate
 #install /home/ubuntu/django-movieApp/requirements.txt
 pip install -r /home/ubuntu/django-movieApp/requirements.txt
 
-firewall-cmd --zone=public --permanent --add-port=8080/tcp
+# firewall-cmd --zone=public --permanent --add-port=8080/tcp
 
-firewall-cmd --reload
+# firewall-cmd --reload
+
+sudo firewall-cmd --zone=public --permanent --add-port=8080/tcp sudo firewall-cmd --reload
+
+# sudo firewall-cmd --zone=public --permanent ----add-service=mysql sudo firewall-cmd --reload
 
 # run server
 screen -d -m python3 /home/ubuntu/django-movieApp/manage.py runserver 8080
