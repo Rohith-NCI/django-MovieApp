@@ -35,7 +35,7 @@ sudo pkill -f runserver
 # sudo pkill -f tailwind
 # sudo pkill -f node
 
-#cd /home/ubuntu/django-movieApp/
+# cd /home/ubuntu/django-movieApp/
 
 # activate virtual environment
 python3 -m venv /home/ubuntu/django-movieApp/venv
