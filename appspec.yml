@@ -45,6 +45,6 @@ files:
     destination: /home/ubuntu/django-movieApp
 hooks:
   BeforeInstall:
-      - location: scripts/before_install.sh
+      - location: /home/ubuntu/django-movieApp/scripts/before_install.sh
   AfterInstall:
-      - location: scripts/after_install.sh
+      - location: /home/ubuntu/django-movieApp/scripts/after_install.sh

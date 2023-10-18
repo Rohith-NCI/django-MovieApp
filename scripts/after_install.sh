@@ -35,14 +35,18 @@ sudo pkill -f runserver
 # sudo pkill -f tailwind
 # sudo pkill -f node
 
-cd /home/ubuntu/django-movieApp/
+#cd /home/ubuntu/django-movieApp/
 
 # activate virtual environment
-python3 -m venv venv
-source venv/bin/activate
+python3 -m venv /home/ubuntu/django-movieApp/venv
+source /home/ubuntu/django-movieApp/venv/bin/activate
 
-install requirements.txt
+#install /home/ubuntu/django-movieApp/requirements.txt
 pip install -r /home/ubuntu/django-movieApp/requirements.txt
 
+firewall-cmd --zone=public --permanent --add-port=8080/tcp
+
+firewall-cmd --reload
+
 # run server
-screen -d -m python3 manage.py runserver
+screen -d -m python3 /home/ubuntu/django-movieApp/manage.py runserver 8080
