@@ -60,7 +60,7 @@ sudo rm -rf /home/ubuntu/install
 
 # update os & install python3
 sudo yum update
-sudo yum install -y python3 python3-dev python3-pip python3-venv
+sudo yum install -y python3 python3-pip
 pip install --user --upgrade virtualenv
 
 # delete app
