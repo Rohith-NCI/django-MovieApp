@@ -42,6 +42,8 @@ python3 -m venv /home/ubuntu/django-movieApp/venv
 source /home/ubuntu/django-movieApp/venv/bin/activate
 
 #install /home/ubuntu/django-movieApp/requirements.txt
+pip install django
+python -m pip install Pillow
 pip install -r /home/ubuntu/django-movieApp/requirements.txt
 
 # firewall-cmd --zone=public --permanent --add-port=8080/tcp
