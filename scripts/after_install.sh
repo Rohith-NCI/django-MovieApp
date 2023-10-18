@@ -45,4 +45,4 @@ install requirements.txt
 pip install -r /home/ubuntu/django-movieApp/requirements.txt
 
 # run server
-screen -d -m python3 manage.py runserver 0:8080
+screen -d -m python3 manage.py runserver
